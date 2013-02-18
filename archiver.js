@@ -34,6 +34,8 @@ for (var i = 0; i < emails.length; i++) {
     console.log("Mail: " + currentMail.Subject);
     console.log("Attachment count: " + currentMail.Attachments.length);
 
+    console.assert(currentMail.SenderName != null && currentMail.SenderName != "");
+
     var fullPath = fs.combine(DIRECTORY_ROOT, "mails", currentMail.SenderName);
 
     if (!fs.exists(fullPath)) {
