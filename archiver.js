@@ -42,10 +42,10 @@ for (var i = 0; i < emails.length; i++) {
 
     for (var x = 0; x < currentMail.Attachments.length; x++) {
 
-        var currentAttachment = currentMail[i].Attachments[x];
+        var currentAttachment = currentMail.Attachments[x];
+        console.log("filename: " + currentAttachment.Filename);
 
         var attachmentFilename = fs.combine(fullPath, currentAttachment.Filename);
-
         mailRepository.saveAttachment(currentMail.UniqueId, currentAttachment, attachmentFilename);
 
         console.log("Saved attachment: " + attachmentFilename);
