@@ -51,5 +51,9 @@ for (var i = 0; i < emails.length; i++) {
         mailRepository.saveAttachment(currentMail.UniqueId, currentAttachment, attachmentFilename);
 
         console.log("Saved attachment: " + attachmentFilename);
+
+        mailRepository.deleteAttachment(currentMail.UniqueId, currentAttachment);
+
+        console.log("Deleted attachment: " + currentAttachment.Filename);
     }
 }
