@@ -7,4 +7,4 @@ remove all attachments manually and put them on to hard disk.
 This script creates a folder for each sender and puts all attachments in it.
 
 # Dependencies
-- (blackMagic)[https://github.com/schultyy/blackMagic]
+- [blackMagic](https://github.com/schultyy/blackMagic)
